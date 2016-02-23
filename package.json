@@ -1,0 +1,18 @@
+{
+  "name": "elementary-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "elementary-electron": "cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adventure": "^2.11.0",
+    "ansimd": "^0.2.1",
+    "chalk": "^1.1.1",
+    "which": "^1.2.4"
+  }
+}
