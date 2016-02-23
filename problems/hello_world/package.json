@@ -1,0 +1,10 @@
+{
+  "name": "my-module",
+  "version": "0.0.1",
+  "gasket": [
+    "transform-uppercase"
+  ],
+  "dependencies": {
+    "transform-uppercase": "^1.0.0"
+  }
+}
