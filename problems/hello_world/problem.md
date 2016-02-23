@@ -26,6 +26,6 @@ electron.app.on('ready', function () {
 })
 ```
 
-Finally, run `electron myapp.js` in your terminal. You should see an application open that displays Hello World!
+Finally, run `electron app.js` in your terminal. You should see an application open that displays Hello World!
 
 When you think you are done with this challenge, run `elementary-electron verify`
