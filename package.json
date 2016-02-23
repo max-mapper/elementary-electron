@@ -6,6 +6,9 @@
   "bin": {
     "elementary-electron": "cli.js"
   },
+  "scripts": {
+    "test": "standard"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,5 +18,8 @@
     "chalk": "^1.1.1",
     "electron-spawn": "^4.1.0",
     "which": "^1.2.4"
+  },
+  "devDependencies": {
+    "standard": "^6.0.7"
   }
 }

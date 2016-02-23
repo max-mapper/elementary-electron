@@ -15,7 +15,7 @@ Create a file called `index.html` in this directory with the following contents:
 </html>
 ```
 
-Then create a file called `myapp.js` with the following contents:
+Then create a file called `app.js` with the following contents:
 
 ```
 var electron = require('electron')
