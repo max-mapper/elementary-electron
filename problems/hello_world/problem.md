@@ -2,7 +2,9 @@
 
 Let's set up a simple electron application.
 
-Create a file called `index.html` in this directory with the following contents:
+First, create a new empty folder and do the rest of these steps inside that new folder.
+
+Create a file called `index.html` in your folder with the following contents:
 
 ```
 <!DOCTYPE html>
