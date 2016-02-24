@@ -1,7 +1,7 @@
 {
   "name": "elementary-electron",
   "version": "1.0.0",
-  "description": "",
+  "description": "nodeschool workshop to learn electron",
   "main": "index.js",
   "bin": {
     "elementary-electron": "cli.js"
@@ -10,7 +10,7 @@
     "test": "standard"
   },
   "keywords": [],
-  "author": "",
+  "author": "Max Ogden",
   "license": "ISC",
   "dependencies": {
     "adventure": "^2.11.0",
