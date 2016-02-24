@@ -4,21 +4,13 @@ Now we're going to add the ability to draw on the image.
 
 You might not ever need to draw on a cat. But you might want an app to label objects in an image, define a geographic area on a map, or annotate scientific image data.
 
-Create a file called `index.html` in this directory that looks like this. This time we're adding a `div` element that will contain our visualization.
+Add the following line to the `<body>` section of your `index.html`. This time we're adding a `div` element that will contain our visualization.
 
 ```
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-  <div id='visualization'></div>
-</body>
-<script src="index.js"></script>
-</html>
+<div id='visualization'></div>
 ```
 
-Create a file called `app.js`, also similar to last time, but we'll adjust the window size.
+Now lets modify `app.js`. This one will also be like the earlier examples, but we'll adjust the window size this time.
 
 ```
 var electron = require('electron')
@@ -29,7 +21,7 @@ electron.app.on('ready', function () {
 })
 ```
 
-Now create a file called `index.js`. The first line should require our cat picture. This time, we just need the source data for the image. So we'll assign the created element to a variable, get its source data, then remove it.
+Next modify `index.js`. The first line should require our cat picture. This time, we just need the source data for the image. So we'll assign the created element to a variable, get its source data, then remove it.
 
 ```
 var picture = require('cat-picture')
