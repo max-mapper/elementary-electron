@@ -7,7 +7,8 @@ var problems = [
   'Installing',
   'Hello World',
   'Cat Picture',
-  'Cat Annotation'
+  'Cat Annotation',
+  'Save PDF'
 ]
 
 problems.forEach(function (prob) {
