@@ -10,17 +10,6 @@ Add the following line to the `<body>` section of your `index.html`. This time w
 <div id='visualization'></div>
 ```
 
-Now lets modify `app.js`. This one will also be like the earlier examples, but we'll adjust the window size this time.
-
-```
-var electron = require('electron')
-
-electron.app.on('ready', function () {
-  var mainWindow = new electron.BrowserWindow({width: 600, height: 800})
-  mainWindow.loadURL('file://' + __dirname + '/index.html')
-})
-```
-
 Next modify `index.js`. The first line should require our cat picture. This time, we just need the source data for the image. So we'll assign the created element to a variable, get its source data, then remove it.
 
 ```
