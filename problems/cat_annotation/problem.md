@@ -1,30 +1,44 @@
 # Cat Annotation
 
-Now we're going to add the ability to draw on the image.
+Now we're going to add a feature: draw polygon regions on the image!
 
-You might not ever need to draw on a cat. But you might want an app to label objects in an image, define a geographic area on a map, or annotate scientific image data.
+This could be useful for labeling objects or defining regions on a map.
 
-Add the following line to the `<body>` section of your `index.html`. This time we're adding a `div` element that will contain our visualization.
+Add the following line to the `<body>` section of your `index.html`, which adds an empty `div` element to hold our visualization.
 
 ```
 <div id='visualization'></div>
 ```
 
-Next modify `index.js`. The first line should require our cat picture. This time, we just need the source data for the image. So we'll assign the created element to a variable, get its source data, then remove it.
+Next modify `index.js`. The first line should require our cat picture, and also assign it to a variable: 
 
 ```
 var picture = require('cat-picture')
+```
+
+We actually just want the source data for the picture, so get it, then remove the image from the page.
+
+```
 var src = picture.src
 picture.remove()
 ```
 
-Now render the image data using a visualization module designed for drawing polygons over an image.
+Now install a visualization module for drawing polygons by typing `npm install lightning-image-poly --save`.
+
+Double check that your `package.json` has a new entry!
+
+Require the module by adding the line:
 
 ```
 var image = require('lightning-image-poly')
+```
+
+Then render the image data we stored above by creating a new `image` visualization.
+
+```
 var viz = new image('#visualization', null, [src], {hullAlgorithm: 'convex'})
 ```
 
-If you run `electron app.js` you should see a cat, and be able to draw polygons on it wih the mouse.
+If you run `electron app.js` you should see a cat, and be able to draw polygons on it wih the mouse!
 
 When you think you are done with this challenge, run `elementary-electron verify`
