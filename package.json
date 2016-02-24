@@ -16,7 +16,6 @@
     "adventure": "^2.11.0",
     "ansimd": "^0.2.1",
     "chalk": "^1.1.1",
-    "electron-spawn": "^4.1.0",
     "which": "^1.2.4"
   },
   "devDependencies": {

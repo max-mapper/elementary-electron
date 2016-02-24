@@ -5,7 +5,8 @@ var shop = adventure('elementary-electron')
 
 var problems = [
   'Installing',
-  'Hello World'
+  'Hello World',
+  'Cat Picture'
 ]
 
 problems.forEach(function (prob) {
