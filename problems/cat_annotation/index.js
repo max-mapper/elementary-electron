@@ -6,7 +6,7 @@ var mdrender = require('../../markdown-render.js')
 module.exports = function () {
   var problem = {}
   problem.problem = mdrender(fs.readFileSync(path.join(__dirname, 'problem.md')).toString()) + '\n'
-  problem.solution = 'TODO'
+  problem.solution = 'Run "elementary-electron" again to select the next challenge.\n'
 
   problem.verify = function (args, cb) {
     try {
