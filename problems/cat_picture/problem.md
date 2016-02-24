@@ -2,7 +2,7 @@
 
 Now that we have a working skeleton structure we can add our first feature: render a cat picture.
 
-To do this we can use a module from npmjs.org called `cat-picture`. It does one thing: adds a cat picture to a web page
+To do this we can use a module from npmjs.org called `cat-picture`. It does one thing: adds a cat picture to a web page.
 
 To get the cat picture we can use the `npm` command line tool.
 
