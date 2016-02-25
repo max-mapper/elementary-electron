@@ -4,7 +4,7 @@ Now we're going to add a feature: draw polygon regions on the image!
 
 This could be useful for labeling objects or defining regions on a map.
 
-Add the following line to the `<body>` section of your `index.html`, which adds an empty `div` element to hold our visualization.
+Add the following line to the `<body>` section of your `index.html`, which adds an empty `div` element to hold our visualization. Make sure to add this line _before_ the `<script>` tag and after the `<h1>` section.
 
 ```
 <div id='visualization'></div>
