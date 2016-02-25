@@ -4,7 +4,7 @@ Let's set up a simple electron application.
 
 First, create a new empty folder and do the rest of these steps inside that new folder.
 
-Create a file called `index.html` in your folder with the following contents:
+Using a text editor (such as TextEdit, Notepad, etc.), create a file called `index.html` in the folder you just created with the following contents:
 
 ```
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ Create a file called `index.html` in your folder with the following contents:
 </html>
 ```
 
-Then create a file called `app.js` with the following contents:
+Then create a file (in the same folder) called `app.js` with the following contents:
 
 ```
 var electron = require('electron')
