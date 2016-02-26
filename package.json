@@ -20,5 +20,13 @@
   },
   "devDependencies": {
     "standard": "^6.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxogden/elementary-electron.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/elementary-electron/issues"
+  },
+  "homepage": "https://github.com/maxogden/elementary-electron#readme"
 }
