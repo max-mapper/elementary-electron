@@ -20,8 +20,5 @@ module.exports = function () {
 
   problem.pass = '\n' + chalk.green('SUCCESS!') + ' Found electron in your PATH.'
   problem.failed = '\n' + chalk.red('FAIL!') + ' Did not find electron in your PATH.'
-  problem.run = function (args) {
-    console.error('Run is not necessary in this challenge')
-  }
   return problem
 }

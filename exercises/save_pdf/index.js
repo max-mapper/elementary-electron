@@ -20,8 +20,5 @@ module.exports = function () {
 
   problem.pass = '\n' + chalk.green('SUCCESS!') + ' You did it!'
   problem.fail = '\n' + chalk.red('FAIL!') + ' Your app has some issues.'
-  problem.run = function (args) {
-    console.error('Run is not necessary in this challenge')
-  }
   return problem
 }

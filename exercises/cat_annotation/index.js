@@ -22,8 +22,5 @@ module.exports = function () {
 
   problem.pass = '\n' + chalk.green('SUCCESS!') + ' Run elementary-electron again to select the next challenge'
   problem.fail = '\n' + chalk.red('FAIL!') + ' Your app has some issues.'
-  problem.run = function (args) {
-    console.error('Run is not necessary in this challenge')
-  }
   return problem
 }

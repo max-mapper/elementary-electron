@@ -39,8 +39,5 @@ module.exports = function () {
 
   problem.pass = '\n' + chalk.green('SUCCESS!') + ' Your app folder looks good.'
   problem.fail = '\n' + chalk.red('FAIL!') + ' Your app folder is missing some things!'
-  problem.run = function (args) {
-    console.error('Run is not necessary in this challenge')
-  }
   return problem
 }
