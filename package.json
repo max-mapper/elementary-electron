@@ -13,11 +13,11 @@
   "author": "Max Ogden",
   "license": "ISC",
   "dependencies": {
-    "adventure": "^2.11.0",
     "ansimd": "^0.2.1",
     "chalk": "^1.1.1",
     "cheerio": "^0.20.0",
-    "which": "^1.2.4"
+    "which": "^1.2.4",
+    "workshopper-adventure": "^4.5.0"
   },
   "devDependencies": {
     "standard": "^6.0.7"

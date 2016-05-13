@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
-var adventure = require('adventure')
-var shop = adventure('elementary-electron')
+var adventure = require('workshopper-adventure')
+var shop = adventure({
+	appDir: __dirname
+})
 
 var problems = [
   'Installing',
