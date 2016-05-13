@@ -2,7 +2,7 @@
 
 var adventure = require('workshopper-adventure')
 var shop = adventure({
-	appDir: __dirname
+  appDir: __dirname
 })
 
 var problems = [

@@ -1,12 +1,11 @@
 var fs = require('fs')
 var path = require('path')
 var chalk = require('chalk')
-var mdrender = require('../../markdown-render.js')
 
 module.exports = function () {
   var problem = {}
   problem.requireSubmission = false
-  problem.problem = mdrender(fs.readFileSync(path.join(__dirname, 'problem.md')).toString()) + '\n'
+  problem.problem = {file: path.join(__dirname, 'problem.md')}
   problem.solution = 'Run "elementary-electron" again to select the next challenge.\n'
 
   problem.verify = function (args, cb) {
