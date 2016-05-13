@@ -1,24 +1,19 @@
 var fs = require('fs')
 var path = require('path')
-var chalk = require('chalk')
+var checkAll = require('../../lib/checkAll.js')
+var fsCheck = require('../../lib/fsCheck.js')
+var pkgDependencyCheck = require('../../lib/pkgDependencyCheck.js')
 
 module.exports = function () {
   var problem = {}
   problem.requireSubmission = false
   problem.problem = {file: path.join(__dirname, 'problem.{lang}.md')}
-  problem.solution = 'That was the last challenge!\nFor more Electron ideas check out https://github.com/sindresorhus/awesome-electron\nFor more workshops like this check out http://nodeschool.io\n'
 
   problem.verify = function (args, cb) {
-    try {
-      fs.statSync(path.join(process.cwd(), 'annotation.pdf'))
-    } catch (err) {
-      console.error('\nFailed to find annotation.pdf')
-      return cb(false)
-    }
-    cb(true)
+    checkAll([
+      fsCheck(path.join('.', 'annotation.pdf')),
+    ], 'You did it!\n\n' + 'For more Electron ideas check out https://github.com/sindresorhus/awesome-electron\nFor more workshops like this check out http://nodeschool.io\n', 'Your app has some issues.', cb)
   }
-
-  problem.pass = '\n' + chalk.green('SUCCESS!') + ' You did it!'
-  problem.fail = '\n' + chalk.red('FAIL!') + ' Your app has some issues.'
+  
   return problem
 }

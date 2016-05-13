@@ -1,25 +1,19 @@
 var fs = require('fs')
 var path = require('path')
-var chalk = require('chalk')
+var checkAll = require('../../lib/checkAll.js')
+var fsCheck = require('../../lib/fsCheck.js')
+var pkgDependencyCheck = require('../../lib/pkgDependencyCheck.js')
 
 module.exports = function () {
   var problem = {}
   problem.requireSubmission = false
   problem.problem = {file: path.join(__dirname, 'problem.{lang}.md')}
-  problem.solution = 'When you type "electron app.js" it should start the Welcome to Electron application.\n\nRun "elementary-electron" again to select the next challenge.\n'
 
   problem.verify = function (args, cb) {
-    try {
-      fs.statSync(path.join(process.cwd(), 'index.html'))
-      fs.statSync(path.join(process.cwd(), 'app.js'))
-    } catch (err) {
-      console.error('\nFailed to find index.html and app.js.')
-      return cb(false)
-    }
-    cb(true)
+    checkAll([
+      fsCheck(path.join('.', 'index.js')),
+      fsCheck(path.join('.', 'app.js'))
+    ], 'Your app looks good.\n\nWhen you type `electron app.js` it should start the Welcome to Electron application.', 'Your app has some issues.', cb)
   }
-
-  problem.pass = '\n' + chalk.green('SUCCESS!') + ' Your app looks good.'
-  problem.fail = '\n' + chalk.red('FAIL!') + ' Your app has some issues.'
   return problem
 }

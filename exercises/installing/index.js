@@ -6,19 +6,14 @@ module.exports = function () {
   var problem = {}
   problem.requireSubmission = false
   problem.problem = {file: path.join(__dirname, 'problem.{lang}.md')}
-  problem.solution = 'When you type "electron" it should start the Welcome to Electron application.\n\nRun "elementary-electron" again to select the next challenge.\n'
 
   problem.verify = function (args, cb) {
     which('electron', function (err, resolvedPath) {
       if (err) {
-        console.error('Failed to find the command "electron" in your PATH.')
-        return cb(false)
+        return cb(null, false, chalk.green('{{ee.fail}}') + ' Failed to find the command "electron" in your PATH.')
       }
-      cb(true)
+      cb(null, true, chalk.green('{{ee.success}}') + ' Found electron in your PATH.')
     })
   }
-
-  problem.pass = '\n' + chalk.green('SUCCESS!') + ' Found electron in your PATH.'
-  problem.failed = '\n' + chalk.red('FAIL!') + ' Did not find electron in your PATH.'
   return problem
 }
