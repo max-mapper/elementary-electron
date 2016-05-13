@@ -5,7 +5,7 @@ var chalk = require('chalk')
 module.exports = function () {
   var problem = {}
   problem.requireSubmission = false
-  problem.problem = {file: path.join(__dirname, 'problem.md')}
+  problem.problem = {file: path.join(__dirname, 'problem.{lang}.md')}
   problem.solution = 'That was the last challenge!\nFor more Electron ideas check out https://github.com/sindresorhus/awesome-electron\nFor more workshops like this check out http://nodeschool.io\n'
 
   problem.verify = function (args, cb) {

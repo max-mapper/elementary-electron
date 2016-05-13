@@ -5,7 +5,7 @@ var chalk = require('chalk')
 module.exports = function () {
   var problem = {}
   problem.requireSubmission = false
-  problem.problem = {file: path.join(__dirname, 'problem.md')}
+  problem.problem = {file: path.join(__dirname, 'problem.{lang}.md')}
   problem.solution = 'When you type "electron app.js" it should start the Welcome to Electron application.\n\nRun "elementary-electron" again to select the next challenge.\n'
 
   problem.verify = function (args, cb) {

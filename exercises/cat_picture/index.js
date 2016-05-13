@@ -6,7 +6,7 @@ var cheerio = require('cheerio')
 module.exports = function () {
   var problem = {}
   problem.requireSubmission = false
-  problem.problem = {file: path.join(__dirname, 'problem.md')}
+  problem.problem = {file: path.join(__dirname, 'problem.{lang}.md')}
   problem.solution = 'Run "elementary-electron" again to select the next challenge.\n'
 
   problem.verify = function (args, cb) {
