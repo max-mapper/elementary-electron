@@ -15,7 +15,7 @@ var problems = [
 
 problems.forEach(function (prob) {
   shop.add(prob, function () {
-    var problemPath = './problems/' + prob.replace(/\s/ig, '_').toLowerCase()
+    var problemPath = './exercises/' + prob.replace(/\s/ig, '_').toLowerCase()
     return require(problemPath)()
   })
 })
