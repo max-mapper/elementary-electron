@@ -4,7 +4,7 @@
   "description": "nodeschool workshop to learn electron",
   "main": "index.js",
   "bin": {
-    "elementary-electron": "cli.js"
+    "elementary-electron": "bin/elementary-electron"
   },
   "scripts": {
     "test": "standard"

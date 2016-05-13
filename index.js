@@ -20,4 +20,4 @@ problems.forEach(function (prob) {
   })
 })
 
-shop.execute(process.argv.slice(2))
+module.exports = shop
