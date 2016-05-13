@@ -10,6 +10,10 @@
     "test": "standard"
   },
   "keywords": [],
+  "contributors": [
+    "Max Ogden (https://github.com/maxogden)",
+    "freeman-lab (https://github.com/freeman-lab)"
+  ],
   "author": "Max Ogden",
   "license": "ISC",
   "dependencies": {
