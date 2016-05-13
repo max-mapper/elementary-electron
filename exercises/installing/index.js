@@ -10,9 +10,9 @@ module.exports = function () {
   problem.verify = function (args, cb) {
     which('electron', function (err, resolvedPath) {
       if (err) {
-        return cb(null, false, chalk.green('{{ee.fail}}') + ' Failed to find the command "electron" in your PATH.')
+        return cb(null, false, chalk.green('{{ee.fail}}') + ' {{exercise.installing.fail}}')
       }
-      cb(null, true, chalk.green('{{ee.success}}') + ' Found electron in your PATH.')
+      cb(null, true, chalk.green('{{ee.success}}') + ' {{exercise.installing.success}}')
     })
   }
   return problem

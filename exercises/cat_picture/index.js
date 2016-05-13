@@ -1,6 +1,4 @@
-var fs = require('fs')
 var path = require('path')
-var chalk = require('chalk')
 var checkAll = require('../../lib/checkAll.js')
 var cheerio = require('cheerio')
 var fsCheck = require('../../lib/fsCheck.js')
@@ -45,7 +43,6 @@ module.exports = function () {
           messages.push('  - ' + chalk.red(htmlPath) + ' [missing body tag]')
           return 0
         }
-        debugger
         if (!$.contains(body[0], script[0])) {
           messages.push('  - ' + chalk.red(htmlPath) + ' [script not in body]')
           return 0
@@ -53,7 +50,7 @@ module.exports = function () {
         messages.push('  - ' + chalk.green(htmlPath) + ' ✔')
         return 1
       }
-    ], 'Your app folder looks good.', 'Your app folder is missing some things!', cb)
+    ], '{{exercise.cat_picture.fail}}', '{{exercise.cat_picture.fail}}', cb)
   }
   return problem
 }

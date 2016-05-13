@@ -13,7 +13,7 @@ module.exports = function () {
     checkAll([
       fsCheck(path.join('.', 'index.js')),
       fsCheck(path.join('.', 'app.js'))
-    ], 'Your app looks good.\n\nWhen you type `electron app.js` it should start the Welcome to Electron application.', 'Your app has some issues.', cb)
+    ], '{{exercise.hello_world.fail}}', '{{exercise.hello_world.fail}}', cb)
   }
   return problem
 }

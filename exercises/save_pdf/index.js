@@ -12,7 +12,7 @@ module.exports = function () {
   problem.verify = function (args, cb) {
     checkAll([
       fsCheck(path.join('.', 'annotation.pdf')),
-    ], 'You did it!\n\n' + 'For more Electron ideas check out https://github.com/sindresorhus/awesome-electron\nFor more workshops like this check out http://nodeschool.io\n', 'Your app has some issues.', cb)
+    ], '{{exercise.save_pdf.success}}', '{{exercise.save_pdf.success}}', cb)
   }
   
   return problem
