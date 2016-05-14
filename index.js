@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
-var adventure = require('workshopper-adventure')
-var shop = adventure({
+var elementaryElectron = require('workshopper-adventure')({
   appDir: __dirname,
   languages: ['en']
 })
 
-shop.addAll([
+elementaryElectron.addAll([
   'Installing',
   'Hello World',
   'Cat Picture',
@@ -14,4 +13,4 @@ shop.addAll([
   'Save PDF'
 ])
 
-module.exports = shop
+module.exports = elementaryElectron
