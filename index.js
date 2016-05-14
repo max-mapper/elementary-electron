@@ -6,19 +6,12 @@ var shop = adventure({
   languages: ['en']
 })
 
-var problems = [
+shop.addAll([
   'Installing',
   'Hello World',
   'Cat Picture',
   'Cat Annotation',
   'Save PDF'
-]
-
-problems.forEach(function (prob) {
-  shop.add(prob, function () {
-    var problemPath = './exercises/' + prob.replace(/\s/ig, '_').toLowerCase()
-    return require(problemPath)()
-  })
-})
+])
 
 module.exports = shop
