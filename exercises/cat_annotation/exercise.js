@@ -12,7 +12,7 @@ module.exports = function () {
       fsCheck(path.join('.', 'index.js')),
       fsCheck(path.join('.', 'node_modules', 'cat-picture')),
       fsCheck(path.join('.', 'node_modules', 'lightning-image-poly'))
-    ], '', 'Your app has some issues.', cb)
+    ], '', '{{exercise.cat_annotation.fail}}', cb)
   }
   return problem
 }
