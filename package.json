@@ -9,7 +9,7 @@
   "scripts": {
     "test": "standard"
   },
-  "keywords": [],
+  "keywords": ["nodeschool", "workshopper", "adventure", "tutorial", "electron"],
   "contributors": [
     "Max Ogden (https://github.com/maxogden)",
     "freeman-lab (https://github.com/freeman-lab)"
