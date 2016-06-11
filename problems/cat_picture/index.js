@@ -2,6 +2,7 @@ var fs = require('fs')
 var path = require('path')
 var chalk = require('chalk')
 var mdrender = require('../../markdown-render.js')
+var cheerio = require('cheerio')
 
 module.exports = function () {
   var problem = {}
@@ -18,6 +19,21 @@ module.exports = function () {
       console.error('\nFailed to find index.js, package.json with cat-picture in dependencies and the folder ./node_modules/cat_picture')
       return cb(false)
     }
+
+    try {
+      var html = fs.readFileSync(path.join(process.cwd(), 'index.html')).toString()
+      var $ = cheerio.load(html)
+      var script = $('script')
+      var body = $('body')
+      if (!$.contains(body, script)) {
+        console.error('\nThe script tag should be in the body of your html document!')
+        return cb(false)
+      }
+    } catch (e) {
+      console.error('There was a problem reading your index.html file!')
+      return cb(false)
+    }
+
     cb(true)
   }
 
