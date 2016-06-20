@@ -10,7 +10,12 @@
   	},
   	"cat_picture": {
   		"success": "Your app folder looks good.",
-  		"fail": "Your app folder is missing some things!"
+  		"fail": "Your app folder is missing some things!",
+      "cant_read": "Can not access the file",
+      "invalid_html": "Not valid html",
+      "missing_script_tag": "Missing script tag",
+      "missing_body_tag": "Missing body tag",
+      "script_not_in_body": "Script not in body"
   	},
   	"hello_world": {
   		"success": "Your app looks good.\n\nWhen you type `electron app.js` it should start the Welcome to Electron application.",
