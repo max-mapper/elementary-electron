@@ -1,0 +1,33 @@
+{
+  "ee": {
+    "success": "SUCCESS!",
+    "fail": "FAIL!"
+  },
+  "exercise": {
+  	"cat_annotation": {
+  		"success": "",
+  		"fail": "Your app has some issues."
+  	},
+  	"cat_picture": {
+  		"success": "Your app folder looks good.",
+  		"fail": "Your app folder is missing some things!",
+      "cant_read": "Can not access the file",
+      "invalid_html": "Not valid html",
+      "missing_script_tag": "Missing script tag",
+      "missing_body_tag": "Missing body tag",
+      "script_not_in_body": "Script not in body"
+  	},
+  	"hello_world": {
+  		"success": "Your app looks good.\n\nWhen you type `electron app.js` it should start the Welcome to Electron application.",
+  		"fail": "Your app has some issues."
+  	},
+  	"installing": {
+  		"success": "Found `electron` in your PATH.",
+  		"fail": "Failed to find the command `electron` in your PATH."
+  	},
+  	"save_pdf": {
+  		"success": "You did it!\n\nFor more Electron ideas check out https://github.com/sindresorhus/awesome-electron\nFor more workshops like this check out http://nodeschool.io\n",
+  		"fail": "Your app has some issues."
+  	}
+  }
+}
