@@ -11,9 +11,9 @@ module.exports = function () {
 
   problem.verify = function (args, cb) {
     checkAll([
-      fsCheck(path.join('.', 'index.js')),
+      fsCheck(path.join('.', 'index.html')),
       fsCheck(path.join('.', 'app.js'))
-    ], '{{exercise.hello_world.fail}}', '{{exercise.hello_world.fail}}', cb)
+    ], '{{exercise.hello_world.success}}', '{{exercise.hello_world.fail}}', cb)
   }
   return problem
 }
