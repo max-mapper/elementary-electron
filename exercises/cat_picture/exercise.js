@@ -53,7 +53,7 @@ module.exports = function () {
         messages.push('  - ' + chalk.green(htmlPath) + ' ✔')
         return 1
       }
-    ], '{{exercise.cat_picture.fail}}', '{{exercise.cat_picture.fail}}', cb)
+    ], '{{exercise.cat_picture.success}}', '{{exercise.cat_picture.fail}}', cb)
   }
   return problem
 }
