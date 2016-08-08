@@ -12,7 +12,7 @@ module.exports = function () {
   problem.verify = function (args, cb) {
     checkAll([
       fsCheck(path.join('.', 'annotation.pdf')),
-    ], '{{exercise.save_pdf.success}}', '{{exercise.save_pdf.success}}', cb)
+    ], '{{exercise.save_pdf.success}}', '{{exercise.save_pdf.fail}}', cb)
   }
   
   return problem
