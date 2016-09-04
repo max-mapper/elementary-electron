@@ -9,7 +9,13 @@
   "scripts": {
     "test": "standard"
   },
-  "keywords": ["nodeschool", "workshopper", "adventure", "tutorial", "electron"],
+  "keywords": [
+    "nodeschool",
+    "workshopper",
+    "adventure",
+    "tutorial",
+    "electron"
+  ],
   "contributors": [
     "Max Ogden (https://github.com/maxogden)",
     "freeman-lab (https://github.com/freeman-lab)"
@@ -23,7 +29,7 @@
     "workshopper-adventure": "^4.6.0"
   },
   "devDependencies": {
-    "standard": "^6.0.7"
+    "standard": "^8.0.0"
   },
   "repository": {
     "type": "git",

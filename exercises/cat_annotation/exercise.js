@@ -1,7 +1,6 @@
 var path = require('path')
 var checkAll = require('../../lib/checkAll.js')
 var fsCheck = require('../../lib/fsCheck.js')
-var pkgDependencyCheck = require('../../lib/pkgDependencyCheck.js')
 
 module.exports = function () {
   var problem = {}
