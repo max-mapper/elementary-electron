@@ -2,7 +2,7 @@
 
 var elementaryElectron = require('workshopper-adventure')({
   appDir: __dirname,
-  languages: ['en']
+  languages: ['en', 'ja']
 })
 
 elementaryElectron.addAll([
