@@ -18,8 +18,8 @@
       "script_not_in_body": "Script not in body"
     },
     "hello_world": {
-      "success": "Your app looks good.\n\nWhen you type `electron app.js` it should start the Welcome to Electron application.",
-      "fail": "Your app has some issues."
+      "success": "あなたのアプリは正しく動作しているようです。\n\n`electron app.js` を実行すると Electron アプリケーションの世界に入ることができるでしょう。",
+      "fail": "あなたのアプリは正しく動作していないようです。"
     },
     "installing": {
       "success": "`electron` コマンドが、あなたの PATH に追加されました！",
