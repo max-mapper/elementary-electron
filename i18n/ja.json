@@ -9,13 +9,13 @@
       "fail": "Your app has some issues."
     },
     "cat_picture": {
-      "success": "Your app folder looks good.",
-      "fail": "Your app folder is missing some things!",
-      "cant_read": "Can not access the file",
-      "invalid_html": "Not valid html",
-      "missing_script_tag": "Missing script tag",
-      "missing_body_tag": "Missing body tag",
-      "script_not_in_body": "Script not in body"
+      "success": "あなたのアプリのフォルダ内は良い感じです。",
+      "fail": "Yあなたのアプリのフォルダ内は、何かが足りないようです！",
+      "cant_read": "ファイルのアクセスができないようです。",
+      "invalid_html": "html ファイルが正しくないようです。",
+      "missing_script_tag": "script タグが抜けているようです。",
+      "missing_body_tag": "body タグが抜けているようです。",
+      "script_not_in_body": "script タグが body タグの中にないようです。"
     },
     "hello_world": {
       "success": "あなたのアプリは正しく動作しているようです。\n\n`electron app.js` を実行すると Electron アプリケーションの世界に入ることができるでしょう。",
