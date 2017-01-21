@@ -1,9 +1,9 @@
 # インストール
 
-まずは`electron`を、
+まずは `electron` を、
 あなたのコマンドライン環境にインストールしてみましょう。
 
-`npm install electron-prebuilt -g` を実行してください。
+`npm install electron -g` を実行してください。
 
 もし `EACCES` というエラーが表示された場合は、
 こちらのガイドを読んでみて下さい：

@@ -26,8 +26,8 @@
       "fail": "`electron` コマンドが、あなたの PATH に追加されていないようです。"
     },
     "save_pdf": {
-      "success": "You did it!\n\nFor more Electron ideas check out https://github.com/sindresorhus/awesome-electron\nFor more workshops like this check out http://nodeschool.io\n",
-      "fail": "Your app has some issues."
+      "success": "完成したようですね！\n\nもっと Electron に関するアイデアを見たい方はこちらを確認してみてください: https://github.com/sindresorhus/awesome-electron\n他のワークショップを見たい方はこちらへ: http://nodeschool.io\n",
+      "fail": "何かがうまく行っていないようです。"
     }
   }
 }
