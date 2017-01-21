@@ -5,8 +5,8 @@
   },
   "exercise": {
     "cat_annotation": {
-      "success": "",
-      "fail": "Your app has some issues."
+      "success": "正しく描画されたようです。",
+      "fail": "何かがうまく行っていないようです。"
     },
     "cat_picture": {
       "success": "あなたのアプリのフォルダ内は良い感じです。",
