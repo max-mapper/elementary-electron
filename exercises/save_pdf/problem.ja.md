@@ -1,7 +1,6 @@
 # Save PDF
 
 最後に、`P` キーを押したら描画したポリゴンを PDF に保存する機能を追加しましょう。
-Let's make it so when you hit the `P` key it will save a PDF of your annotations.
 
 いくつかのモジュールを `index.js` 内で読み込みます:
 
