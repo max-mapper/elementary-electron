@@ -1,0 +1,33 @@
+{
+  "ee": {
+    "success": "成功！",
+    "fail": "失敗！"
+  },
+  "exercise": {
+    "cat_annotation": {
+      "success": "正しく描画されたようです。",
+      "fail": "何かがうまく行っていないようです。"
+    },
+    "cat_picture": {
+      "success": "あなたのアプリのフォルダ内は良い感じです。",
+      "fail": "あなたのアプリのフォルダ内は、何かが足りないようです！",
+      "cant_read": "ファイルのアクセスができないようです。",
+      "invalid_html": "html ファイルが正しくないようです。",
+      "missing_script_tag": "script タグが抜けているようです。",
+      "missing_body_tag": "body タグが抜けているようです。",
+      "script_not_in_body": "script タグが body タグの中にないようです。"
+    },
+    "hello_world": {
+      "success": "あなたのアプリは正しく動作しているようです。\n\n`electron app.js` を実行すると Electron アプリケーションの世界に入ることができるでしょう。",
+      "fail": "あなたのアプリは正しく動作していないようです。"
+    },
+    "installing": {
+      "success": "`electron` コマンドが、あなたの PATH に追加されました！",
+      "fail": "`electron` コマンドが、あなたの PATH に追加されていないようです。"
+    },
+    "save_pdf": {
+      "success": "完成したようですね！\n\nもっと Electron に関するアイデアを見たい方はこちらを確認してみてください: https://github.com/sindresorhus/awesome-electron\n他のワークショップを見たい方はこちらへ: http://nodeschool.io\n",
+      "fail": "何かがうまく行っていないようです。"
+    }
+  }
+}

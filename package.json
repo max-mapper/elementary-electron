@@ -26,7 +26,7 @@
     "chalk": "^1.1.1",
     "cheerio": "^0.20.0",
     "which": "^1.2.4",
-    "workshopper-adventure": "^4.6.0"
+    "workshopper-adventure": "^5.1.8"
   },
   "devDependencies": {
     "standard": "^8.0.0"
