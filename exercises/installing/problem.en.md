@@ -2,7 +2,7 @@
 
 You have to install `electron` into your command line environment.
 
-Run `npm install electron-prebuilt -g`
+Run `npm install electron -g`
 
 If you receive an EACCES error read this guide:
 
