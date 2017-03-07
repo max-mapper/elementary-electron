@@ -34,4 +34,4 @@ window.addEventListener('keydown', function (e) {
 
 これで、`P` キーが押されたら `annotation.pdf` として現在のフォルダに保存されるようになりました。アプリを実行してみましょう。
 
-この課題が完了したら　`elementary-electron verify` を実行してください。
+この課題が完了したら `elementary-electron verify` を実行してください。

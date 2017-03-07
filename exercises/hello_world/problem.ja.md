@@ -30,4 +30,4 @@ electron.app.on('ready', function () {
 
 最後に、ターミナルで `electron app.js` を実行してください。Hello World が表示されたアプリケーションが開いているはずです。
 
-この課題が完了したら　`elementary-electron verify` を実行してください。
+この課題が完了したら `elementary-electron verify` を実行してください。
