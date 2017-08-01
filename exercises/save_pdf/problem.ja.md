@@ -13,7 +13,7 @@ var fs = require('fs')
 
 ```
 function save () {
-  remote.getCurrentWindow().webContents.printToPDF({
+  remote.getCurrentWebContents().printToPDF({
     portrait: true
   }, function (err, data) {
     fs.writeFile('annotation.pdf', data, function (err) {
