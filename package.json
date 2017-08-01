@@ -1,6 +1,6 @@
 {
   "name": "elementary-electron",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "nodeschool workshop to learn electron",
   "main": "index.js",
   "bin": {
