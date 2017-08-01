@@ -18,7 +18,7 @@
       "script_not_in_body": "script 태그가 body 태그 내에 존재하지 않습니다."
     },
     "hello_world": {
-      "success": "앱이 정상입니다.\n\n`electron app.js`을 실행하면 Electron 세계로부터의 환영 메시지가 출력될 것입니다.",
+      "success": "앱이 정상입니다.\n\n`electron app.js`를 실행하면 Electron 세계로부터의 환영 메시지가 출력될 것입니다.",
       "fail": "앱에 문제가 있습니다."
     },
     "installing": {
