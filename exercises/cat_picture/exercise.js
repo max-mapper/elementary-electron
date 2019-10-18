@@ -11,7 +11,6 @@ module.exports = function () {
   problem.requireSubmission = false
   problem.problem = {file: path.join(__dirname, 'problem.{lang}.md')}
   problem.verify = function (args, cb) {
-
     var htmlPath = 'index.html'
 
     checkAll([
@@ -22,7 +21,7 @@ module.exports = function () {
       function (messages) {
         var html
         try {
-          html = fs.readFileSync(htmlPath, 'utf-8') 
+          html = fs.readFileSync(htmlPath, 'utf-8')
         } catch (e) {
           console.log(e)
           messages.push('  - ' + chalk.red(htmlPath) + ' [{{exercise.cat_picture.cant_read}}]')
@@ -53,7 +52,7 @@ module.exports = function () {
         messages.push('  - ' + chalk.green(htmlPath) + ' ✔')
         return 1
       }
-    ], '{{exercise.cat_picture.fail}}', '{{exercise.cat_picture.fail}}', cb)
+    ], '{{exercise.cat_picture.success}}', '{{exercise.cat_picture.fail}}', cb)
   }
   return problem
 }

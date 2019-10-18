@@ -10,7 +10,7 @@ Add the following line to the `<body>` section of your `index.html`, which adds 
 <div id='visualization'></div>
 ```
 
-Next modify `index.js`. The first line should require our cat picture, and also assign it to a variable: 
+Next modify `index.js`. The first line should require our cat picture, and also assign it to a variable:
 
 ```
 var picture = require('cat-picture')
@@ -39,6 +39,6 @@ Then render the image data we stored above by creating a new `image` visualizati
 var viz = new image('#visualization', null, [src], {hullAlgorithm: 'convex'})
 ```
 
-If you run `electron app.js` you should see a cat, and be able to draw polygons on it wih the mouse!
+If you run `electron app.js` you should see a cat, and be able to draw polygons on it with the mouse!
 
 When you think you are done with this challenge, run `elementary-electron verify`

@@ -1,0 +1,33 @@
+{
+  "ee": {
+    "success": "성공!",
+    "fail": "실패!"
+  },
+  "exercise": {
+    "cat_annotation": {
+      "success": "성공적입니다.",
+      "fail": "뭔가 문제가 있습니다."
+    },
+    "cat_picture": {
+      "success": "현재 앱 폴더와 폴더 내의 파일들이 정상적입니다.",
+      "fail": "현재 앱 폴더는 뭔가가 부족합니다.",
+      "cant_read": "파일에 접근할 수 없습니다.",
+      "invalid_html": "html 파일에 문제가 있습니다.",
+      "missing_script_tag": "script 태그를 찾을 수 없습니다.",
+      "missing_body_tag": "body 태그를 찾을 수 없습니다.",
+      "script_not_in_body": "script 태그가 body 태그 내에 존재하지 않습니다."
+    },
+    "hello_world": {
+      "success": "앱이 정상입니다.\n\n`electron app.js`를 실행하면 Electron 세계로부터의 환영 메시지가 출력될 것입니다.",
+      "fail": "앱에 문제가 있습니다."
+    },
+    "installing": {
+      "success": "`electron` 명령어가 PATH에 추가되었습니다.",
+      "fail": "`electron` 명령어가 PATH에 추가되어있지 않습니다."
+    },
+    "save_pdf": {
+      "success": "잘하셨어요!\n\nElectron에 관해 더 알고 싶으신 분은 여길 참조하세요. https://github.com/sindresorhus/awesome-electron\n다른 워크숍에 관한 정보는 여길 참조하세요. http://nodeschool.io\n",
+      "fail": "앱에 문제가 있습니다."
+    }
+  }
+}

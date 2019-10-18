@@ -13,7 +13,7 @@ Then define a function that will save the current window to a PDF.
 
 ```
 function save () {
-  remote.getCurrentWindow().webContents.printToPDF({
+  remote.getCurrentWebContents().printToPDF({
     portrait: true
   }, function (err, data) {
     fs.writeFile('annotation.pdf', data, function (err) {
