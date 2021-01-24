@@ -41,4 +41,4 @@ var viz = new image('#visualization', null, [src], {hullAlgorithm: 'convex'})
 
 これで、`electron app.js` を実行してアプリを開くと、猫の写真が表示されるだけでなく、マウスでポリゴンを描けるようになります。
 
-この課題が完了したら　`elementary-electron verify` を実行してください。
+この課題が完了したら `elementary-electron verify` を実行してください。
